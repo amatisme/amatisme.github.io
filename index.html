@@ -6,20 +6,35 @@
         color: WHITE;
         font-family: sans-serif;
         font-weight: 300;
-      }
-      div {
-        background-color:rgba(255,255,255,0.1);
-        display: flex-box;
+        display: flex;
         align-items: center;
-        vertical-align: middle;
+        justify-content: center;
+      }
+      body > div {
+        background-color:rgba(255,255,255,0.15);
         width: 30vw;
         height: 30vh;
+        border-radius: .6rem;
+      }
+      body > div > div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 20%;
+      }
+      body > div > div:first-child,
+      body > div > div:last-child {
+        height: 30%;
       }
     </style>
   </head>
   <body>
     <div>
-      amatisme.github.io
+      <div></div>
+      <div><h4>amatisme.github.io</h4></div>
+      <div><code>> welcome</code></div>
+      <div></div>
     </div>
   </body>
 </html>
