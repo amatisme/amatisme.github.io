@@ -13,8 +13,8 @@ theme && bodyClass.add(theme);
 // Change the theme on a button click
 function toggleTheme() {
   let currentTheme = localStorage.getItem('theme');
-  // if no theme exist, default to dark
-  const current = (currentTheme ? currentTheme : 'dark');
+  // if no theme exist, default to first style define in body tag
+  const current = (currentTheme ? currentTheme : document.body.classList[0]);
   const next = themeMap[current];
   // replace the value
   bodyClass.replace(current, next);
