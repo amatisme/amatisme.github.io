@@ -1,0 +1,94 @@
+body {
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+main > div {
+  width: 30vw;
+}
+main > div > div {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 100%;
+  height: 20%;
+}
+main > div > div:first-child,
+main > div > div:last-child {
+  height: 30%;
+}
+code {
+  width: 100%;
+}
+button {
+  position: fixed;
+  display: block;
+  margin: 0;
+  padding: 0;
+  top: 1rem;
+  right: 1rem;
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+::-webkit-scrollbar {
+  display :none;
+}
+
+/*
+ * CSS VARIABLE CHANGES
+ */
+
+.dark {
+  --text-color: LIME;
+  --link-color: LIME;
+  --bold-color: LIME;
+  --background: BLACK;
+}
+
+.light {
+  --text-color: DIMGRAY;
+  --link-color: BLUE;
+  --bold-color: DIMGRAY;
+  --background: WHITE;
+}
+
+.console {
+  --text-color: WHITE;
+  --link-color: CYAN;
+  --bold-color: YELLOW;
+  --background: BLUE;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-color);
+}
+a {
+  color: var(--link-color);
+}
+b {
+  color: var(--bold-color);
+}
+button {
+  color: var(--text-color);
+}
+button > i {
+  color: var(--text-color);
+}
+
+ /*
+ * MEDIA QUERIES
+ */
+@media screen and (max-width: 412px) {
+  main > div {
+    width: 80vw;
+  }
+}
