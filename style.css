@@ -38,6 +38,10 @@ button {
   border: none;
   outline: none;
 }
+hr {
+  border: 0;
+  height: 1px;
+}
 ::-webkit-scrollbar {
   display :none;
 }
@@ -76,6 +80,10 @@ a {
 }
 b {
   color: var(--bold-color);
+}
+hr {
+  background: var(--text-color);
+  background-image: linear-gradient(to right, var(--background), var(--text-color), var(--background));
 }
 button {
   color: var(--text-color);
