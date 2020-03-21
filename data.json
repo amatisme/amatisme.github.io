@@ -1,0 +1,11 @@
+let data = `
+[
+  {
+    "label" : "update 03202020",
+    "code" : "Now using vanilla javascript to read json entries and append content nodes to updates. Updated layout to use CSS table, animation and grid techniques. Notice the drop icon, click and reload, colour preference is stored in locally."
+  },
+  {
+    "label" : "update 03182020",
+    "code" : "Why haven't I improved this site? I want to, the thing is, I am so excited to have this time off that I am a kid(old) in candy store. Currently doing backend/middleware stuff like learning Swift and Vapor, GCP with Firebase as well as going through Kyle Simpsons amazing YDKJS series to fill in some blanks. Eventually Ill have to wise up and get a job but for now, just loving code, loving life and Self - isolating."
+  }
+]`;
