@@ -33,7 +33,7 @@ entries.forEach((item, i) => {
    var code = document.createElement("code");
 
    // create text nodes and populate content
-   let labelText = document.createTextNode("> run " + item.label);
+   let labelText = document.createTextNode("> run update " + item.date);
    let codeText = document.createTextNode(item.code);
 
    //apend new text
