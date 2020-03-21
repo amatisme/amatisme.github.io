@@ -2,7 +2,7 @@ let data = `
 [
   {
     "label" : "update 03202020",
-    "code" : "Now using vanilla javascript to read json entries and append content nodes to updates. Updated layout to use CSS table, animation and grid techniques. Notice the drop icon, click and reload, colour preference is stored in locally."
+    "code" : "Now using vanilla javascript to read json entries and append content nodes to updates. Updated layout to use CSS table, animation and grid techniques. Notice the drop icon, click and reload, colour preference is stored locally."
   },
   {
     "label" : "update 03182020",
