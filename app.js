@@ -22,26 +22,51 @@ function toggleTheme() {
   localStorage.setItem('theme', next);
 }
 
-// get new entries from data.json
-let entries = JSON.parse(data);
+function processData(data) {
+  // get new entries from data.json
+  let json = JSON.parse(data);
+  let entries = json.slideshow.slides;
 
-//iterate entries and append to DOM
-entries.forEach((item, i) => {
-   // create new elements
-   var node = document.createElement("content");
-   var label = document.createElement("label");
-   var code = document.createElement("code");
+  console.log(entries);
 
-   // create text nodes and populate content
-   let labelText = document.createTextNode("> run update " + item.date);
-   let codeText = document.createTextNode(item.code);
+  //iterate entries and append to DOM
+  entries.forEach((item, i) => {
+     // create new elements
+     var node = document.createElement("content");
+     var label = document.createElement("label");
+     var code = document.createElement("code");
 
-   //apend new text
-   label.appendChild(labelText);
-   code.appendChild(codeText);
+     // create text nodes and populate content
+     let labelText = document.createTextNode("> run update " + item.date);
+     let codeText = document.createTextNode(item.code);
 
-   //append new elements
-   node.appendChild(label);
-   node.appendChild(code);
-   document.getElementById("entries").appendChild(node);
- });
+     //apend new text
+     label.appendChild(labelText);
+     code.appendChild(codeText);
+
+     //append new elements
+     node.appendChild(label);
+     node.appendChild(code);
+     document.getElementById("entries").appendChild(node);
+   });
+}
+
+function handler() {
+  console.log(this);
+  if(this.status == 200 &&
+    this.responseText != null &&
+    this.responseText) {
+    // success!
+    processData(this.responseText);
+  } else {
+    // something went wrong
+    console.log("Error: Could not connect to data source.");
+  }
+}
+
+(function() {
+    var client = new XMLHttpRequest();
+    client.onload = handler;
+    client.open("GET", "https://httpbin.org/json");
+    client.send();
+})();
