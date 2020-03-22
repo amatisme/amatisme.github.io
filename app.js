@@ -24,10 +24,10 @@ function toggleTheme() {
 
 function processData(data) {
   // get new entries from data.json
-  let json = JSON.parse(data);
-  let entries = json.slideshow.slides;
+  let entries = JSON.parse(data);
 
-  console.log(entries);
+  //sort entries by date param
+  entries.sort((a, b) => parseInt(a.data.date) - parseInt(b.data.date)).reverse();
 
   //iterate entries and append to DOM
   entries.forEach((item, i) => {
@@ -37,8 +37,8 @@ function processData(data) {
      var code = document.createElement("code");
 
      // create text nodes and populate content
-     let labelText = document.createTextNode("> run update " + item.date);
-     let codeText = document.createTextNode(item.code);
+     let labelText = document.createTextNode("> run update " + item.data.date);
+     let codeText = document.createTextNode(item.data.code);
 
      //apend new text
      label.appendChild(labelText);
@@ -52,7 +52,6 @@ function processData(data) {
 }
 
 function handler() {
-  console.log(this);
   if(this.status == 200 &&
     this.responseText != null &&
     this.responseText) {
@@ -64,9 +63,10 @@ function handler() {
   }
 }
 
+//Use an IIFE for the hell of it! lol
 (function() {
     var client = new XMLHttpRequest();
     client.onload = handler;
-    client.open("GET", "https://amatisme.firebaseapp.com/api/v1/fights");
+    client.open("GET", "https://amatisme.firebaseapp.com/blog/api/v1/entries");
     client.send();
 })();
