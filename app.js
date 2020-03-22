@@ -67,6 +67,6 @@ function handler() {
 (function() {
     var client = new XMLHttpRequest();
     client.onload = handler;
-    client.open("GET", "https://httpbin.org/json");
+    client.open("GET", "https://amatisme.firebaseapp.com/api/v1/fights");
     client.send();
 })();
