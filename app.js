@@ -67,6 +67,9 @@ function handler() {
 (function() {
     var client = new XMLHttpRequest();
     client.onload = handler;
-    client.open("GET", "https://amatisme.firebaseapp.com/blog/api/v1/entries");
+    client.open("GET", "https://us-central1-amatisme.cloudfunctions.net/amatismeEntries");
+    client.setRequestHeader('Access-Control-Allow-Headers', '*');
+    client.setRequestHeader('Access-Control-Allow-Origin', '*');
+    client.setRequestHeader('Access-Control-Allow-Credentials', true);
     client.send();
 })();
