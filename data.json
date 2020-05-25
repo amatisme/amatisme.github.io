@@ -1,15 +1,26 @@
-let data = `
 [
   {
-    "date" : "03202020",
-    "code" : "Now using vanilla javascript to read json entries and append content nodes to updates. Updated layout to use CSS table, animation and grid techniques. Notice the drop icon, click and reload, colour preference is stored using css variables and local storage."
+    "data": {
+      "date" : "05252020",
+      "code" : "Some design sketches to Cloud Storage for view. Plan is to create a new section showcasing my design skills as this sites layout is intentionally minimal. First up is one of my current projects under development, a small business site for a friend. I am strictly doing pro bono work atm. <a href=\"https://firebasestorage.googleapis.com/v0/b/amatisme.appspot.com/o/pinkforestprojects-web-landing-v1-w.png?alt=media&token=7e6c0b9e-2124-4810-bb33-42d417463356\" target=\"_blank\">Design A (full)</a>, <a href=\"https://firebasestorage.googleapis.com/v0/b/amatisme.appspot.com/o/pinkforestprojects-web-mobile-landing-v1-w.png?alt=media&token=da970bae-9b4f-49a7-b5d7-76c130a5c81d\" target=\"_blank\">Design A (mobile)</a>, <a href=\"https://firebasestorage.googleapis.com/v0/b/amatisme.appspot.com/o/pinkforestprojects-web-landing-v2-r2-w.png?alt=media&token=02aa692f-baf3-4d89-a11e-1ddd997aed56\" target=\"_blank\">Design B (full)</a>. So far the client is leaning to Design B, but I like design A :)"
+    }
   },
   {
-    "date" : "03202019",
-    "code" : "Was a bit tricky, but I managed to build a Swift Vapor 4 RestFulAPI that calls my private node GCloudPAPI. The GCloudAPI connects to my FireStore instance, gets a set of data, then mutates it and serves. Code will be up soon. It was fun, Swift is still new to me so I had to learn a new language, and framework."
+    "data": {
+      "date" : "03202020",
+      "code" : "Now using vanilla javascript to read json entries and append content nodes to updates. Updated layout to use CSS table, animation and grid techniques. Notice the drop icon, click and reload, colour preference is stored using css variables and local storage."
+    }
   },
   {
-    "date" : "03182020",
-    "code" : "Why haven't I improved this site? I want to, the thing is, I am so excited to have this time off that I am a kid(old) in candy store. Currently doing backend/middleware stuff like learning Swift and Vapor, GCP with Firebase as well as going through Kyle Simpsons amazing YDKJS series to fill in some blanks. Eventually Ill have to wise up and get a job but for now, just loving code, loving life and Self - isolating."
+    "data": {
+      "date" : "03202019",
+      "code" : "Was a bit tricky, but I managed to build a Swift Vapor 4 RestFulAPI that calls my private node GCloudPAPI. The GCloudAPI connects to my FireStore instance, gets a set of data, then mutates it and serves. Code will be up soon. It was fun, Swift is still new to me so I had to learn a new language, and framework."
+    }
+  },
+  {
+    "data": {
+      "date" : "03182020",
+      "code" : "Why haven't I improved this site? I want to, the thing is, I am so excited to have this time off that I am a kid(old) in candy store. Currently doing backend/middleware stuff like learning Swift and Vapor, GCP with Firebase as well as going through Kyle Simpsons amazing YDKJS series to fill in some blanks. Eventually Ill have to wise up and get a job but for now, just loving code, loving life and Self - isolating."
+    }
   }
-]`;
+]

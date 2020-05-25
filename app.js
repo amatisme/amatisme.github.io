@@ -25,6 +25,7 @@ function toggleTheme() {
 function processData(data) {
   // get new entries from data.json
   let entries = JSON.parse(data);
+  console.log(entries)
 
   //sort entries by date param
   entries.sort((a, b) => parseInt(a.data.date) - parseInt(b.data.date)).reverse();
@@ -40,9 +41,15 @@ function processData(data) {
      let labelText = document.createTextNode("> run update " + item.data.date);
      let codeText = document.createTextNode(item.data.code);
 
+     let codeHTML = document.createElement('div');
+     codeHTML.innerHTML = '<b>test</b>';
+
      //apend new text
      label.appendChild(labelText);
-     code.appendChild(codeText);
+
+     // code.appendChild(codeText);
+     code.innerHTML = item.data.code;
+     // code.appendChild(codeDiv);
 
      //append new elements
      node.appendChild(label);
@@ -68,6 +75,7 @@ function handler() {
     var client = new XMLHttpRequest();
     client.onload = handler;
     client.open("GET", "https://us-central1-amatisme.cloudfunctions.net/amatismeEntries");
+    // client.open("GET", "./data.json"); dev
     client.setRequestHeader('Access-Control-Allow-Headers', '*');
     client.setRequestHeader('Access-Control-Allow-Origin', '*');
     client.setRequestHeader('Access-Control-Allow-Credentials', true);
