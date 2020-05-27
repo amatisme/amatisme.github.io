@@ -9,17 +9,30 @@
   <body class="dark">
     <header>
       <ul>
-        <li></li>
-        <li><h4>amatisme.github.io</h4></li>
-        <li><button type=button onClick=toggleTheme()>
-          <i class="material-icons">invert_colors</i>
-        </button></li>
+        <li class="tighten"></li>
+        <li><h4>&lt; amatisme /&gt;</h4></li>
+        <li class="tighten"><button type=button onClick="toggleSection('code')">Coding</a></li>
+        <li class="tighten"><button type=button onClick="toggleSection('design')">Design</a></li>
+        <li class="tighten"><button type=button onClick="toggleSection('blog')">Blog</button></li>
+        <li class="tighten"><button type=button onClick=toggleTheme()><i class="material-icons">invert_colors</i></button></li>
       </ul>
     </header>
-    <article id="entries">
+    <article id="code">
       <content>
-        <label>> run hello world</label>
+        <label>&gt; run hello world</label>
         <code>Hi there &#x1F44B;, I am an experienced Full Stack Web Developer based in the greater Toronto area who is currently recompiling. I have been coding on web since 1994, keeping current at every step. I am a polyglot with a great understanding of language principles and a quick study with new frameworks, libraries and design patterns. I'm also an all around fun and respectful guy. Please visit my <a href="https://github.com/amatisme" target="_blank">repositories</a>, or <a href="https://my.indeed.com/p/matp-47og99z" target="_blank">resume</a>.</code>
+      </content>
+    </article>
+    <article id="design">
+      <content>
+        <label>&gt; run design</label>
+        <code>A clean aesthetic, open and concise. Balancing positioning and weighting, being contemporary, yet interesting. I approach design similarily to code, nothing frivilous always purposeful, whether to inform or emot.</code>
+      </content>
+    </article>
+    <article id="blog">
+      <content>
+        <label>&gt; run hello world</label>
+        <code>I'm growing like a tree.</code>
       </content>
     </article>
   </body>

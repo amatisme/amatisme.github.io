@@ -22,39 +22,79 @@ function toggleTheme() {
   localStorage.setItem('theme', next);
 }
 
+function toggleSection(section) {
+  let elem = document.getElementById(section);
+
+  //toggle if visible
+  if(elem.style.display === "none" || !elem.style.display) {
+    elem.style.display = "grid";
+  }
+
+  //hide others
+  let sections = Array.from(document.getElementsByTagName("article"));
+  sections.forEach((item, i) => {
+    if(item.id !== section) {
+      document.getElementById(item.id).style.display = "none";
+    }
+  });
+
+}
+
 function processData(data) {
   // get new entries from data.json
   let entries = JSON.parse(data);
   console.log(entries)
 
   //sort entries by date param
-  entries.sort((a, b) => parseInt(a.data.date) - parseInt(b.data.date)).reverse();
+  entries.sort((a, b) => new Date(a.data.date) - new Date(b.data.date)).reverse();
 
+  //filter entries for panels
+  let entries_blog = entries.filter(item => item.data.category == "blog");
+  let entries_code = entries.filter(item => item.data.category == "code");
+  let entries_design = entries.filter(item => item.data.category == "design");
+
+  //add to panels
+  addEntriesToPanel(entries_blog,"blog");
+  addEntriesToPanel(entries_design,"design");
+  addEntriesToPanel(entries_code,"code");
+
+
+}
+
+function addEntriesToPanel(entries,id) {
   //iterate entries and append to DOM
   entries.forEach((item, i) => {
      // create new elements
      var node = document.createElement("content");
+     var run = document.createElement("label");
+     run.classList.add("timestamp");
      var label = document.createElement("label");
      var code = document.createElement("code");
+     var timestamp = document.createElement("label");
+     timestamp.classList.add("timestamp");
 
      // create text nodes and populate content
-     let labelText = document.createTextNode("> run update " + item.data.date);
-     let codeText = document.createTextNode(item.data.code);
-
+     // let labelText = document.createTextNode("> run " + item.data.label);
+     let runText = document.createTextNode("> run update");
+     let labelText = document.createTextNode(item.data.label);
+     let dateText = document.createTextNode(setFormattedDate(item.data.date));
      let codeHTML = document.createElement('div');
-     codeHTML.innerHTML = '<b>test</b>';
 
      //apend new text
+     run.appendChild(runText);
      label.appendChild(labelText);
+     timestamp.appendChild(dateText);
 
      // code.appendChild(codeText);
      code.innerHTML = item.data.code;
      // code.appendChild(codeDiv);
 
      //append new elements
+     node.appendChild(run);
      node.appendChild(label);
+     node.appendChild(timestamp);
      node.appendChild(code);
-     document.getElementById("entries").appendChild(node);
+     document.getElementById(id).appendChild(node);
    });
 }
 
@@ -70,12 +110,33 @@ function handler() {
   }
 }
 
+function setFormattedDate(d) {
+  //date format, months Array
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  var then = new Date(d);
+  var then_ddmmyyyy = then.getDate() + then.getMonth() + then.getYear();
+  var then_ddmmyyyyhhmm = then_ddmmyyyy + then.getHours() + then.getMinutes();
+
+  var now = new Date();
+  var now_ddmmyyyy = now.getDate() + now.getMonth() + now.getYear();
+  var now_ddmmyyyyhhmm = now_ddmmyyyy + now.getHours() + now.getMinutes();
+
+  if (now_ddmmyyyyhhmm == then_ddmmyyyyhhmm) {
+      return 'seconds ago...';
+  } else if (now_ddmmyyyy == then_ddmmyyyy) {
+      return 'Today at ' + then.getHours() + ':' + then.getMinutes();
+  } else {
+      return then.getDate() + ' ' + months[then.getMonth()] + ' ' + then.getFullYear();
+  }
+}
+
 //Use an IIFE for the hell of it! lol
 (function() {
     var client = new XMLHttpRequest();
     client.onload = handler;
     client.open("GET", "https://us-central1-amatisme.cloudfunctions.net/amatismeEntries");
-    // client.open("GET", "./data.json"); dev
+    // client.open("GET", "./data.json");
     client.setRequestHeader('Access-Control-Allow-Headers', '*');
     client.setRequestHeader('Access-Control-Allow-Origin', '*');
     client.setRequestHeader('Access-Control-Allow-Credentials', true);
