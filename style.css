@@ -9,7 +9,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 10;
-  margin: 0 1rem;
+  height: 6vh;
 }
 header ul,
 header ul * {
@@ -19,7 +19,6 @@ header ul * {
 header ul {
   display: table;
   height: inherit;
-  width: 100%;
 }
 
 header ul li {
@@ -31,14 +30,33 @@ header ul li.tighten {
   padding-left: 1rem;
   width: 1%;
 }
+
 header,
 footer {
   height: 4rem;
   background-color: var(--background);
 }
 
+main {
+  width: 100vw;
+  height: 60vh;
+  padding: 1rem;
+}
+main content {
+  display: block;
+  background-color: var(--text-color);
+  color: var(--background);
+  border-color: var(--text-color);
+  border-width: thin;
+  border-style: solid;
+  border-radius: .3rem;
+  padding: 5rem;
+  animation: cardEntrance 700ms ease-out;
+  animation-fill-mode: backwards;
+}
+
 article {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   grid-gap: 1rem;
   padding: 1rem;
@@ -52,13 +70,14 @@ article content {
   animation: cardEntrance 700ms ease-out;
   animation-fill-mode: backwards;
 }
-article content:first-child {
-  background-color: var(--text-color);
-  color: var(--background);
-  border: none;
+
+article content:hover {
+  transform: scale(1.05);
+  transition: transform .1s ease;
 }
-article content:first-child a {
-  color: var(--background);
+article content {
+  transform: scale(1.0);
+  transition: transform .1s ease;
 }
 
 article#design,
@@ -104,7 +123,7 @@ label.timestamp {
   --text-color: LIME;
   --link-color: LIME;
   --bold-color: LIME;
-  --background: BLACK;
+  --background: rgb(45,45,51);
 }
 
 .light {
@@ -140,6 +159,13 @@ button {
 }
 button > i {
   color: var(--text-color);
+}
+
+input {
+  padding: 6px;
+  border: none;
+  background-color: rgb(54,54,60);
+  outline: none;
 }
 
 /*

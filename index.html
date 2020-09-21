@@ -7,16 +7,33 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   </head>
   <body class="dark">
+    <!-- <template id="vjs-template">
+      <h1>Hello Rick!</h1>
+    </template> -->
+
+
+
+
     <header>
       <ul>
-        <li class="tighten"></li>
         <li><h4>&lt; amatisme /&gt;</h4></li>
         <li class="tighten"><button type=button onClick="toggleSection('code')">Coding</a></li>
         <li class="tighten"><button type=button onClick="toggleSection('design')">Design</a></li>
         <li class="tighten"><button type=button onClick="toggleSection('blog')">Blog</button></li>
+        <li class="tighten"><button type=button onClick="toggleSection('pens')">Pens</button></li>
         <li class="tighten"><button type=button onClick=toggleTheme()><i class="material-icons">invert_colors</i></button></li>
       </ul>
     </header>
+
+    <main>
+      <input data-bind="value: id" placeholder="Enter User Id">
+      <user-component data-bind="user: id"></user-component>
+    </main>
+
+
+
+
+
     <article id="code">
       <content>
         <label>&gt; run hello world</label>
@@ -35,6 +52,24 @@
         <code>I'm growing like a tree.</code>
       </content>
     </article>
+    <article id="pens">
+      <content>
+        <label>&gt; run pens</label>
+        <code>I think I will put some codepens here.</code>
+      </content>
+      <content>
+        <label>&gt; run update</label>
+        <code>
+          <p>Here is some filler text to process.</p>
+          <p class="codepen" data-height="361" data-theme-id="dark" data-default-tab="css,result" data-user="amatisme" data-slug-hash="YzqJdjz" style="height: 361px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;" data-pen-title="YzqJdjz">
+            <span>See the Pen <a href="https://codepen.io/amatisme/pen/YzqJdjz">YzqJdjz</a> by Amatisme (<a href="https://codepen.io/amatisme">@amatisme</a>) on <a href="https://codepen.io">CodePen</a>.</span>
+          </p>
+          <script async src="https://static.codepen.io/assets/embed/ei.js"></script></code>
+      </content>
+    </article>
   </body>
+  <script type="module" src="vanillajs-databind.js"></script>
+  <script type="module" src="./components/entry/entry-component.js"></script>
+  <script type="module" src="components/user/user-component.js"></script>
   <script type="text/javascript" src="app.js"></script>
 </html>

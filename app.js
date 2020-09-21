@@ -40,74 +40,19 @@ function toggleSection(section) {
 
 }
 
-function processData(data) {
-  // get new entries from data.json
-  let entries = JSON.parse(data);
-  console.log(entries)
-
-  //sort entries by date param
-  entries.sort((a, b) => new Date(a.data.date) - new Date(b.data.date)).reverse();
-
-  //filter entries for panels
-  let entries_blog = entries.filter(item => item.data.category == "blog");
-  let entries_code = entries.filter(item => item.data.category == "code");
-  let entries_design = entries.filter(item => item.data.category == "design");
-
-  //add to panels
-  addEntriesToPanel(entries_blog,"blog");
-  addEntriesToPanel(entries_design,"design");
-  addEntriesToPanel(entries_code,"code");
-
-
-}
-
 function addEntriesToPanel(entries,id) {
   //iterate entries and append to DOM
   entries.forEach((item, i) => {
-     // create new elements
-     var node = document.createElement("content");
-     var run = document.createElement("label");
-     run.classList.add("timestamp");
-     var label = document.createElement("label");
-     var code = document.createElement("code");
-     var timestamp = document.createElement("label");
-     timestamp.classList.add("timestamp");
+     // add the vjs-components
+     var node = document.createElement("entry-component");
+     node.setAttribute('data-bind', 'user: id');
+     node.setAttribute('user-id', 1);
+     node.setAttribute('label', item.data.label);
+     node.setAttribute('code', item.data.code);
+     node.setAttribute('timestamp', setFormattedDate(item.data.date));
 
-     // create text nodes and populate content
-     // let labelText = document.createTextNode("> run " + item.data.label);
-     let runText = document.createTextNode("> run update");
-     let labelText = document.createTextNode(item.data.label);
-     let dateText = document.createTextNode(setFormattedDate(item.data.date));
-     let codeHTML = document.createElement('div');
-
-     //apend new text
-     run.appendChild(runText);
-     label.appendChild(labelText);
-     timestamp.appendChild(dateText);
-
-     // code.appendChild(codeText);
-     code.innerHTML = item.data.code;
-     // code.appendChild(codeDiv);
-
-     //append new elements
-     node.appendChild(run);
-     node.appendChild(label);
-     node.appendChild(timestamp);
-     node.appendChild(code);
      document.getElementById(id).appendChild(node);
    });
-}
-
-function handler() {
-  if(this.status == 200 &&
-    this.responseText != null &&
-    this.responseText) {
-    // success!
-    processData(this.responseText);
-  } else {
-    // something went wrong
-    console.log("Error: Could not connect to data source.");
-  }
 }
 
 function setFormattedDate(d) {
@@ -133,12 +78,25 @@ function setFormattedDate(d) {
 
 //Use an IIFE for the hell of it! lol
 (function() {
-    var client = new XMLHttpRequest();
-    client.onload = handler;
-    client.open("GET", "https://us-central1-amatisme.cloudfunctions.net/amatismeEntries");
-    // client.open("GET", "./data.json");
-    client.setRequestHeader('Access-Control-Allow-Headers', '*');
-    client.setRequestHeader('Access-Control-Allow-Origin', '*');
-    client.setRequestHeader('Access-Control-Allow-Credentials', true);
-    client.send();
+  fetch('https://us-central1-amatisme.cloudfunctions.net/amatismeEntries')
+    .then((response) => response.json())
+    .then((data) => {
+      //sort entries by date param
+      data.sort((a, b) => new Date(a.data.date) - new Date(b.data.date)).reverse();
+
+      //filter entries for panels
+      let entries_blog = data.filter(item => item.data.category == "blog");
+      let entries_code = data.filter(item => item.data.category == "code");
+      let entries_design = data.filter(item => item.data.category == "design");
+      let entries_pens = data.filter(item => item.data.category == "pens");
+
+      //add to panels
+      addEntriesToPanel(entries_blog,"blog");
+      addEntriesToPanel(entries_design,"design");
+      addEntriesToPanel(entries_code,"code");
+      addEntriesToPanel(entries_pens,"pens");
+    })
+    .catch((error) => {
+      console.error(error);
+    });
 })();

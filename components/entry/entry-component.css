@@ -1,0 +1,17 @@
+label {
+  display: block;
+  font-weight: bold;
+  font-size: .9rem;
+}
+label.timestamp {
+  font-family: monospace;
+  opacity: .6;
+  margin-bottom: .5rem;
+}
+code {
+  display: block;
+  margin-top: .5rem;
+}
+a {
+  color: var(--text-color);
+}
