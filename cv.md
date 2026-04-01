@@ -4,8 +4,7 @@
 
 
 ### Relevant Skills
-- Excellent interpersonal, communication, and collaboration skills
-- Independent learner, highly curious and motivated 
+
 - Strong working knowledge of HTML5
 - Strong CSS skills, experience working with CSS Libraries and CSS pre-compilers
 - Strong working knowledge of JavaScript ES6, ES5
@@ -30,6 +29,8 @@
 - Working knowledge of OpenGL/WebGL
 - Experience in various IDEs including VSCode, Atom, Sublime and Xcode
 - Experience in Postman
+- Excellent interpersonal, communication, and collaboration skills
+- Independent learner, highly curious and motivated 
 
 ### Experience
 
