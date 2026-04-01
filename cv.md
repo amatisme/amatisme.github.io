@@ -1,16 +1,19 @@
-# MATHEW COLIN PAYNE
-## Full Stack Web Developer ~ Curriculum Vitae
+# MAT PAYNE
+## Senior Full Stack Developer ~ Curriculum Vitae
 [github.com/amatisme](https://github.com/amatisme)
 
 
 ### Relevant Skills
 
+- Strong working knowledge of Application development, architecture and design
+- Strong working knowledge of Angular Framework, Applications and Libraries
+- Strong working knowledge of Firebase and Firestore
 - Strong working knowledge of HTML5
-- Strong CSS skills, experience working with CSS Libraries and CSS pre-compilers
 - Strong working knowledge of JavaScript ES6, ES5
-- Strong working knowledge of AngularJS/2 JavaScript framework
+- Strong CSS skills, experience working with CSS Libraries and CSS pre-compilers
 - Strong working knowledge of design, information architecture and UX
 - Strong working knowledge of Adobe Creative Suite
+- Strong working knowledge of Postman for API development and testing
 - Solid understanding of object oriented programming and functional programming principles
 - Solid understanding of PHP
 - Solid understanding of Python
@@ -28,7 +31,6 @@
 - Good working knowledge of UNIX Shell
 - Working knowledge of OpenGL/WebGL
 - Experience in various IDEs including VSCode, Atom, Sublime and Xcode
-- Experience in Postman
 - Excellent interpersonal, communication, and collaboration skills
 - Independent learner, highly curious and motivated 
 
