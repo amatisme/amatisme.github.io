@@ -22,6 +22,10 @@ header ul {
   width: 100%;
 }
 
+button:hover {
+  cursor: pointer;
+}
+
 header ul li {
   display: table-cell;
   vertical-align: middle;
