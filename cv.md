@@ -2,8 +2,7 @@
 ## Senior Full Stack Developer
 _Resume_
 
-> amatisme@icloud.com
-> amatisme.github.io
+> [amatisme.github.io](https://amatisme.github.io)
 > Pickering, ON, CA
 
 
@@ -97,7 +96,8 @@ Lowepro Canada, Markham, ON – 1999 / 2000 
 - Created and developed corporate website, with multiple brand identities Created print and packaging promotional pieces
 - Liaised with print vendors, marketing agencies, and other outside organizations
 
-_Freelance_2003 to 2010_
+_Freelance_
+2003 to 2010
 - Design and create projects including websites, e-commerce/registration sites, CD-Roms, brochures, posters, kiosk displays and communications pieces
 - Advise clients of best-suited communication methods
 - Improve communication with existing media
