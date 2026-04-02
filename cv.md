@@ -1,9 +1,7 @@
 # MAT PAYNE
 ## Senior Full Stack Developer
-Pickering, ON, CA
-
-> [amatisme.github.io](https://amatisme.github.io)
-
+Pickering, ON, CA. 
+> [amatisme.github.io](https://amatisme.github.io). 
 
 
 ### Developer Skills
@@ -44,7 +42,7 @@ Pickering, ON, CA
 
 ### Professional Experience
 
-_Senior Full Stack Developer_
+_Senior Full Stack Developer_. 
 Solis Healthcare Solutions, Toronto, ON, 2020 / current
 - Architect, design, build and maintain large scale Angular applications
 - Architect, design, build and maintain support libraries
@@ -54,7 +52,7 @@ Solis Healthcare Solutions, Toronto, ON, 2020 / current
 - Develop tooling for reusable form field support
 - Integration and evaluation of cursor AI into existing codebase
 
-_Senior Full Stack Developer / Application Development Analyst_
+_Senior Full Stack Developer / Application Development Analyst_. 
 Town of Whitby, Whitby, ON – 2004 / 2019
 
 - Developed and deployed highly scalable web applications
@@ -65,13 +63,13 @@ Town of Whitby, Whitby, ON – 2004 / 2019
 - Evaluate new web technologies and implementation strategies
 - Technology liaison to staff and management
 
-_Full Stack Web Developer_
+_Full Stack Web Developer_. 
 Aquent, Toronto, ON – 2003 / 2004
 - Developed various websites and web promotions for Armstrong Partners LP Developed various websites and promotion pieces for TravelCuts Student Travel Developed e-marketing promotions for Chapters/Indigo Books
 - Created signage and brochures for the WSIB
 - Created promotional pieces for CIBC on behalf of Ariad Communications
 
-_Lead Web Developer / Designer and Front-End Architect_
+_Lead Web Developer / Designer and Front-End Architect_. 
 Alias Wavefront, Toronto, ON – 2000 / 2003
 - Designed and developed front-end architecture and user interface for web application
 - Developed wireframes, strategic web vision, templates, and stylesheets
@@ -80,12 +78,12 @@ Alias Wavefront, Toronto, ON – 2000 / 2003
 - Liaised with management, stakeholders, and third-party vendors
 - Developed micro sites for promotional campaigns
 
-_Lead Web Developer/Designer and Front-End Architect_
+_Lead Web Developer/Designer and Front-End Architect_. 
 Lowepro Canada, Markham, ON – 1999 / 2000 
 - Created and developed corporate website, with multiple brand identities Created print and packaging promotional pieces
 - Liaised with print vendors, marketing agencies, and other outside organizations
 
-_Freelance_
+_Freelance_. 
 2003 to 2010
 - Design and create projects including websites, e-commerce/registration sites, CD-Roms, brochures, posters, kiosk displays and communications pieces
 - Advise clients of best-suited communication methods
