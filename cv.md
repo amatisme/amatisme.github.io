@@ -63,13 +63,13 @@ Town of Whitby, Whitby, ON – 2004 / 2019
 - Evaluate new web technologies and implementation strategies
 - Technology liaison to staff and management
 
-_Full Stack Web Developer_. 
+_Full Stack Web Developer_\
 Aquent, Toronto, ON – 2003 / 2004
 - Developed various websites and web promotions for Armstrong Partners LP Developed various websites and promotion pieces for TravelCuts Student Travel Developed e-marketing promotions for Chapters/Indigo Books
 - Created signage and brochures for the WSIB
 - Created promotional pieces for CIBC on behalf of Ariad Communications
 
-_Lead Web Developer / Designer and Front-End Architect_. 
+_Lead Web Developer / Designer and Front-End Architect_\
 Alias Wavefront, Toronto, ON – 2000 / 2003
 - Designed and developed front-end architecture and user interface for web application
 - Developed wireframes, strategic web vision, templates, and stylesheets
@@ -78,12 +78,12 @@ Alias Wavefront, Toronto, ON – 2000 / 2003
 - Liaised with management, stakeholders, and third-party vendors
 - Developed micro sites for promotional campaigns
 
-_Lead Web Developer/Designer and Front-End Architect_. 
+_Lead Web Developer/Designer and Front-End Architect_\
 Lowepro Canada, Markham, ON – 1999 / 2000 
 - Created and developed corporate website, with multiple brand identities Created print and packaging promotional pieces
 - Liaised with print vendors, marketing agencies, and other outside organizations
 
-_Freelance_. 
+_Freelance_\
 2003 to 2010
 - Design and create projects including websites, e-commerce/registration sites, CD-Roms, brochures, posters, kiosk displays and communications pieces
 - Advise clients of best-suited communication methods
