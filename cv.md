@@ -1,21 +1,10 @@
 # MAT PAYNE
 ## Senior Full Stack Developer
-_Resume_
+Pickering, ON, CA
 
 > [amatisme.github.io](https://amatisme.github.io)
-> Pickering, ON, CA
 
 
-
-### Interpersonal Skills
-
-- Successfully managing software and technology for internet and intranet applications including associates, users and vendor relationships
-- Relate ideas and direction to colleagues and create a positive and productive business path by communicating effectively with team members and leadership
-- Ability to work rapidly and accurately
-- Ability to envision projects across the complete cycle of concept to production
-- Excellent interpersonal, communication, and collaboration skills
-- Strong research skills and observational skills regarding product and technology trends
-- Independent learner, highly curious and motivated
 
 ### Developer Skills
 
@@ -103,6 +92,16 @@ _Freelance_
 - Improve communication with existing media
 - Client list includes: Redwood Custom Communications, Mazda, Maple Leaf Sports and Entertainment, Ombudsman Ontario, Academy of Ophthalmic Education, Media Sales, Alias Systems, ProCon Roofing, Intervet Canada, and Step Above Design
 
+
+### Interpersonal Skills
+
+- Successfully managing software and technology for internet and intranet applications including associates, users and vendor relationships
+- Relate ideas and direction to colleagues and create a positive and productive business path by communicating effectively with team members and leadership
+- Ability to work rapidly and accurately
+- Ability to envision projects across the complete cycle of concept to production
+- Excellent interpersonal, communication, and collaboration skills
+- Strong research skills and observational skills regarding product and technology trends
+- Independent learner, highly curious and motivated
 
 
 ### Education
