@@ -42,7 +42,7 @@ Pickering, ON, CA.
 
 ### Professional Experience
 
-_Senior Full Stack Developer_. 
+_Senior Full Stack Developer_\
 Solis Healthcare Solutions, Toronto, ON, 2020 / current
 - Architect, design, build and maintain large scale Angular applications
 - Architect, design, build and maintain support libraries
@@ -52,7 +52,7 @@ Solis Healthcare Solutions, Toronto, ON, 2020 / current
 - Develop tooling for reusable form field support
 - Integration and evaluation of cursor AI into existing codebase
 
-_Senior Full Stack Developer / Application Development Analyst_. 
+_Senior Full Stack Developer / Application Development Analyst_\
 Town of Whitby, Whitby, ON – 2004 / 2019
 
 - Developed and deployed highly scalable web applications
