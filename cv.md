@@ -1,8 +1,7 @@
 # MAT PAYNE
 ## Senior Full Stack Developer
 > Pickering, ON, CA\
-> [amatisme.github.io](https://amatisme.github.io)
-> [pdf](https://amatisme.github.io/cv.pdf)
+> [amatisme.github.io](https://amatisme.github.io) | [pdf](https://amatisme.github.io/cv.pdf)
 
 
 ### Developer Skills
